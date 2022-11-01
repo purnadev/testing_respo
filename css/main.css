@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://css.gg/css');
+
+:root {
+    --pop-font: 'Poppins', sans-serif;
+    --purple-primary: #655c97;
+    --pink-light: #f55c69;
+    --blue-primary: #457af5;
+    --white-primary: #fff;
+    --blue-dark: #0f1b36;
+    --ggs: 1;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--pop-font);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+header {
+    border-top: 2px solid var(--blue-primary);
+    padding: 0.5rem 0 0 0;
+    background-color: rgba(0, 0, 255, 0.08);
+
+
+}
+
+.btn_toggle {
+    display: none;
+}
+
+.arrow {
+    font-size: 1rem;
+    padding-left: 0.4rem;
+}
+
+.icon h2 {
+    font-size: 1.5rem;
+    color: var(--blue-primary);
+    margin: 0;
+}
+
+.icon h2 .gg-bulb {
+    font-size: 0.5rem;
+}
+
+.nav-fixed {
+    padding: 0px;
+    background-color: var(--white-primary);
+    height: 80px;
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.nav_link {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav_link ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav_link ul li {
+    list-style-type: none;
+}
+
+.nav_link ul li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: black;
+    padding: 0.3rem;
+}
+
+.btn_contact {
+    margin-left: 0.3rem;
+    cursor: pointer;
+    padding: 0.4rem 0.9rem;
+    border-radius: 0.2rem;
+    background-color: var(--purple-primary);
+    color: var(--white-primary);
+    border: none;
+    font-family: var(--pop-font);
+    transition: all 0.5s ease-in;
+}
+
+.btn_contact:hover {
+    background-color: #4f4488;
+    /* border: 1px solid var(--purple-primary); */
+    /* color: var(--blue-dark); */
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 255, 0.08);
+    /* padding: 1rem;
+margin: 0.5rem; */
+}
+
+.con {
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1rem; */
+    /* margin: 0.5rem; */
+}
+
+.banner .con .left_sec {
+    width: 50%;
+}
+
+.left_sec h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+    margin-bottom: 0.4rem;
+}
+
+.left_sec p {
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.6rem;
+}
+
+.banner .right_sec {
+    width: 40%;
+}
+
+.right_sec img {
+    width: 100%;
+
+}
+
+.btn_sec {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn_serv {
+    padding: 0.4rem 0.9rem;
+    font-family: var(--pop-font);
+    border: 1px solid var(--blue-primary);
+    background-color: transparent;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn_serv:hover {
+    background-color: var(--blue-primary);
+    color: var(--white-primary);
+}
+
+.btn_tell {
+    padding: 0.4rem 0.9rem;
+    display: flex;
+    align-items: center;
+    font-family: var(--pop-font);
+    background-color: var(--pink-light);
+    border: none;
+    color: var(--white-primary);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.btn_tell:hover {
+    background-color: transparent;
+    color: var(--blue-dark);
+    /* border: 1px solid var(--pink-light); */
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.6rem 0 0.6rem 0;
+}
+
+.con_services {
+    width: 50%;
+    text-align: center;
+}
+
+.con_services h2 {
+    font-size: 1.2rem;
+    color: var(--blue-primary);
+    margin-bottom: 0.4rem;
+}
+
+.con_services h3 {
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    color: var(--blue-dark);
+}
+
+.con_services p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    /* border-left: 2px solid var(--blue-primary); */
+    background-color: var(--blue-dark);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    /* padding: ; */
+    /* text-align: center; */
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: var(--pop-font);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.social_icon {
+    display: flex;
+    color: var(--white-primary);
+    gap: 1rem;
+    padding: 8px 8px 8px 32px;
+}
+.products{
+    margin: 1rem 0 1rem 0;
+}
+.ser_product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    column-gap: 2em;
+    row-gap: 2em;
+    /* padding: 0.3rem; */
+}
+
+.pro_item{
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    padding: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    
+}
+.pro_item:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.pro_item .head img{
+    width: 100%;
+}
+
+.pro_item .pro_body h1{
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+    color:var(--blue-primary)
+}
+.pro_item .pro_body h4{
+    font-size: 1.2rem;
+    color: var(--blue-dark);
+}
+.pro_item .pro_body p{
+    font-size: 0.8rem;
+    padding: 0.4rem;
+}
+.pro_item .pro_foot{
+    display: flex;
+    justify-content: center;
+    margin: 0.4rem 0 0.4rem 0;
+}
+.pro_item .pro_foot button{
+    padding: 0.3rem 0.9rem;
+    font-family: var(--pop-font);
+    display:flex;
+    gap: 0.4rem;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--blue-primary);
+    /* border: none; */
+    color: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease-in;
+}
+.pro_item .pro_foot button:hover{
+    background-color: var(--blue-primary);
+    color: var(--white-primary);
+}
+
+.work_sec{
+    margin: 0.5rem 0 0rem 0;
+    /* background-color: #dff1ee; */
+    background-color: #ebebff;
+}
+.process{
+     display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+/* .process div{
+    width: 1000px;
+   
+}
+.process img{
+    width: 800px;
+} */
+
+.process img{
+    width: 100%;
+}
+
+
+footer{
+    padding: 1.3rem 0 0.5rem 0;
+    background-color: #fbf3ec;
+}
+.foot_icon{
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: 0;
+    padding-left: 0;
+
+}
+footer .foot_sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .foot_sec .left_foot{
+    width: 40%;
+}
+.left_foot p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+    padding: 0.5rem 0 0.5rem 0;
+}
+.right_foot{
+    display: flex;
+    gap: 1.2rem;
+    /* align-items: center; */
+    justify-content: center;
+}
+.ser_foot div{
+    display: flex;
+    flex-direction: column;
+}
+.ser_foot div a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.9rem;
+}
+.ser_foot h3{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--blue-dark);
+}
+.lower_foot{
+/* width: 70%; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.lower_foot div{
+    width: 85%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+.lower_foot div p{
+    float:left ;
+    padding: 0.3rem 0 0.3rem 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* mobile and other devices section */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+
+
+}
+
+@media (max-width:450px) {
+    .con {
+        padding-top: 0.1rem;
+        max-width: 100%;
+    }
+
+    .con .left_sec h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn_toggle i {
+        color: var(--blue-dark);
+    }
+
+    .btn_tell {
+        font-size: 0.7rem;
+    }
+    .services p{
+        /* padding: 0.1rem; */
+        width: 100%;
+    }
+    .sidebar{
+        border-left: 2px solid var(--blue-primary);
+    }
+    /* .process div{
+ width: 390px;
+    }
+    .process div img{
+        width: 200px;
+    } */
+    .foot_sec{
+        flex-direction: column;
+    }
+    .right_foot{
+        flex-direction: column;
+    }
+    .left_foot p{
+        /* width: 300px; */
+    }
+    footer{
+        width: 100%;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .banner {
+        padding: 0rem 0 0.8rem 0;
+    }
+
+    .con {
+        width: 100%;
+    }
+
+    .banner .con .left_sec {
+        /* width: 900px; */
+    }
+
+    .left_sec h1 {
+        font-size: 1.6rem;
+    }
+
+    .left_sec p {
+        font-size: 0.9rem;
+    }
+
+    .banner .con .right_sec img {
+        width: 270px;
+    }
+
+    .services .con_services {
+        width: 75%;
+    }
+    /* .process div img{
+        width: 500px;
+    } */
+
+}
+
+@media (max-width:700px) {
+    /* 
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    } */
+
+    .nav_link {
+        display: none;
+    }
+
+    .btn_toggle {
+        display: block;
+    }
+
+    .con {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .banner .con .left_sec {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .left_sec h1 {
+        font-size: 1.7rem;
+    }
+
+    .left_sec p {
+        font-size: 0.9rem;
+    }
+
+    .banner .con .right_sec {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner .con .right_sec img {
+        width: 270px;
+    }
+
+}
