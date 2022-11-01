@@ -436,6 +436,7 @@ footer .foot_sec .left_foot{
 }
 .lower_foot div p{
     float:left ;
+    font-size: 0.9rem;
     padding: 0.3rem 0 0.3rem 0;
     color: rgba(0, 0, 0, 0.5);
 }
@@ -497,6 +498,9 @@ footer .foot_sec .left_foot{
     }
     footer{
         width: 100%;
+    }
+    .con_services p{
+        display: none;
     }
 }
 @media (max-width:400px) {
